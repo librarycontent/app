@@ -1,0 +1,72 @@
+langkah pertama
+git init
+git add coba.text  ----------------------------( menambahkan file "coba.text" ke working tree hanya 1 file )
+git add .  ------------------------------------( menambahkan semua ke working tree )
+setelah edit file, lakukan (commit)
+git commit -m "ini komentarmu"-----------------( wes ngerti bro )
+git branch coba-branch ------------------------( artinya anda membuat branch bar dengan nama "coba-branch" )
+git branch ------------------------------------( lihat semua cabang )
+git merge nama_branch -------------------------( Gabungkan branch ) --pindah dulu ke master sebelum ganbungkan!!!
+git branch -d nama-branch ---------------------( delete branch locally )
+git push origin --delete nama-branch ----------( delete branch remotely )
+git checkout namaBranch -----------------------( pindah branch )
+git checkout origin/master  -------------------( pindah kemaster )
+git switch nama-branch ------------------------( berpindah branch )
+git fetch
+git rebase  ---------------------------( balik lagi ke commit tertentu )
+
+--------------------------------------------------------------------------------------
+git pull akan mengambil commit terbaru lalu otomatis menggabungkan (merge) dengan branch yang aktif.
+git fetch akan mengambil commit saja. Perintah git fetch tidak akan langsung melakukan merge.
+git pull origin master
+git fetch origin master 
+--------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+( bikin alias )
+alias graph="git log --all --decorate --oneline --graph"
+
+-------------------------------------------------------
+Delete file in locally ( git rm )
+Menghapus file secara permanen di Git ( git filter-branch ) --untuk di remote bos
+
+
+
+
+
+
+
+
+Cara Membuat Cabang Baru: ( git branch ini_nama_branch )
+------------------------------------------------------------------------------
+
+
+Lihat Cabang: ( git branch )
+contoh:
+$ git branch
+  halaman_login
+* master  (Tanda bintang (*) artinya cabang yang sedang aktif atau Kita sedang berada di sana.)
+------------------------------------------------------------------------------------
+
+
+
+Gabungkan branch: ( git merge nama_branch )  ---pindah dulu master: ( git checkout master )
+
+--------------------------------------------------------------------------------------------
+
+
+Cara menghapus cabang ( delete branch locally )
+( git branch -d localBranchName )
+-----------------------------------------------------------------------------------
+
+
+// delete branch remotely ( misalkan repo ada di remote github)
+git push origin --delete branch-remote
+---------------------------------------------------------------------------------
+
+--------------------
